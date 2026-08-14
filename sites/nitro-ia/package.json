@@ -1,0 +1,11 @@
+{
+  "name": "nitro-ia-site",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "stripe": "22.1.1"
+  }
+}
