@@ -1,0 +1,26 @@
+/* Nitro IA — legal pages visual companion. Content remains unchanged. */
+.proof-page{--font-display:'Instrument Sans',Arial,sans-serif;--font-body:'Instrument Sans',Arial,sans-serif;--font-mono:'IBM Plex Mono',monospace;--canvas:#0b0d0c;--surface:#151918;--text:#f3f1eb;--execute:#ff8a5b;--proof-canvas:#f3f1eb;--proof-surface:#fffefa;--proof-text:#0b0d0c;--proof-text-2:#525b55;font-family:var(--font-body);background:var(--proof-canvas);color:var(--proof-text)}
+.proof-page .site-header{background:rgba(11,13,12,.96);border-bottom:1px solid #2d3630;backdrop-filter:blur(15px)}
+.proof-page .nav-shell{height:78px;grid-template-columns:210px 1fr auto}
+.proof-page .brand{display:flex;align-items:center;gap:10px;overflow:visible;width:auto;height:auto}
+.proof-page .brand-mark,.proof-page .footer-lockup .brand-mark{display:grid;place-items:center;width:31px;height:31px;background:#ff8a5b;color:#0b0d0c;font-size:19px;font-weight:800;letter-spacing:-.09em;border-radius:1px}
+.proof-page .brand-word,.proof-page .footer-lockup .brand-word{font-family:var(--font-display);color:#f3f1eb;font-size:23px;font-weight:800;letter-spacing:-.065em;line-height:1}
+.proof-page .brand-word span,.proof-page .footer-lockup .brand-word span{font-size:14px;letter-spacing:-.02em;color:#ff8a5b;margin-left:4px}
+.proof-page .nav-cta{background:transparent;color:#f3f1eb;border:0;border-bottom:1px solid #d5ded3;font-size:13px;border-radius:0}
+.proof-page .nav-cta:hover{background:transparent;border-color:#ff8a5b}
+.proof-page .desktop-nav{font-size:13px}
+.proof-page .legal-shell{width:min(1040px,calc(100% - var(--gutter)*2));padding:100px 0 135px}
+.proof-page .legal-hero h1{font-size:clamp(54px,6vw,90px);font-weight:600;letter-spacing:-.065em}
+.proof-page .legal-hero>p{line-height:1.6}
+.proof-page .legal-index{font-size:14px}
+.proof-page .legal-document{background:#fffefa;border:1px solid #dadbd2;border-radius:0;padding:clamp(28px,5vw,66px)}
+.proof-page .legal-document h2{font-size:27px;letter-spacing:-.04em}
+.proof-page .legal-document p,.proof-page .legal-document li{line-height:1.7}
+.proof-page .legal-contact{background:#eae7df;border-left-color:#be4724}
+.proof-page .site-footer{background:#0b0d0c}
+.proof-page .footer-lockup{display:inline-flex;gap:10px;align-items:center}
+.proof-page .footer-lockup .brand-mark{width:38px;height:38px}
+.proof-page .footer-lockup .brand-word{font-size:28px}
+.proof-page .footer-lockup .brand-word span{font-size:17px}
+@media(max-width:1000px){.proof-page .nav-shell{grid-template-columns:180px 1fr auto}}
+@media(max-width:650px){.proof-page .nav-shell{height:66px;grid-template-columns:1fr auto}.proof-page .brand-word{font-size:21px}.proof-page .legal-shell{padding:70px 0 105px}.proof-page .legal-hero h1{font-size:clamp(45px,12vw,64px)}.proof-page .legal-document{padding:27px 22px}.proof-page .mobile-nav{background:#111713}}
