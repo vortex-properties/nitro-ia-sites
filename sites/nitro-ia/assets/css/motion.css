@@ -1,0 +1,278 @@
+/* Nitro IA V2.1 — purposeful motion system.
+   Focal moment: a three-stage workflow, not fake live customer metrics.
+   Other motion explains spatial continuity or user interaction. */
+:root{
+  --motion-fast:160ms;
+  --motion-panel:420ms;
+  --motion-focal:800ms;
+  --motion-ease:cubic-bezier(.16,1,.3,1);
+}
+html{scrollbar-color:#626f63 #0b0d0c}
+.scroll-meter{
+  position:absolute;
+  bottom:-1px;
+  left:0;
+  right:0;
+  height:2px;
+  overflow:hidden;
+  pointer-events:none;
+}
+.scroll-meter>span{
+  display:block;
+  width:100%;
+  height:100%;
+  transform:scaleX(0);
+  transform-origin:left center;
+  background:var(--orange);
+  will-change:transform;
+}
+.header-action:focus-visible,.demo-control:focus-visible,.phase-tabs button:focus-visible{
+  outline:2px solid var(--orange);
+  outline-offset:4px;
+}
+.hero-visual{
+  --pointer-x:0px;
+  --pointer-y:0px;
+}
+.visual-orbit{
+  transform:translate(-50%,-50%) translate(var(--pointer-x),var(--pointer-y));
+  transition:transform 650ms var(--motion-ease);
+}
+.orbit-one::before{
+  content:"";
+  position:absolute;
+  top:18%;
+  right:7.8%;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--orange);
+  box-shadow:0 0 0 4px rgba(255,138,91,.08);
+}
+.orbit-two::after{
+  content:"";
+  position:absolute;
+  bottom:17%;
+  left:12%;
+  width:3px;
+  height:3px;
+  border-radius:50%;
+  background:#ca9c7d;
+}
+.workflow-window{
+  isolation:isolate;
+  transform:translateZ(0);
+}
+@media(prefers-reduced-motion:no-preference){
+  .workflow-window{animation:workflow-build var(--motion-focal) var(--motion-ease) both}
+  @keyframes workflow-build{
+    from{opacity:.72;translate:0 18px;filter:brightness(.85)}
+    to{opacity:1;translate:0 0;filter:brightness(1)}
+  }
+}
+.hero-visual[data-flow-active] .event-card{
+  background:#222b25;
+  border-color:rgba(255,255,255,.095);
+  transition:background-color .42s var(--motion-ease),border-color .42s var(--motion-ease),box-shadow .42s var(--motion-ease);
+}
+.hero-visual[data-flow-active] .event-active .event-index{
+  color:#89978b;
+  transition:color .3s ease;
+}
+.hero-visual[data-flow-active] [data-flow-stage]::before{
+  content:"";
+  position:absolute;
+  inset:-1px auto -1px -1px;
+  width:3px;
+  background:var(--orange);
+  transform:scaleY(0);
+  transform-origin:top;
+  transition:transform .42s var(--motion-ease);
+}
+.hero-visual[data-flow-active][data-active-stage="0"] [data-flow-stage="0"],
+.hero-visual[data-flow-active][data-active-stage="1"] [data-flow-stage="1"],
+.hero-visual[data-flow-active][data-active-stage="2"] [data-flow-stage="2"]{
+  background:#39372c;
+  border-color:rgba(255,138,91,.78);
+  box-shadow:inset 0 0 30px rgba(255,138,91,.045);
+}
+.hero-visual[data-flow-active][data-active-stage="0"] [data-flow-stage="0"]::before,
+.hero-visual[data-flow-active][data-active-stage="1"] [data-flow-stage="1"]::before,
+.hero-visual[data-flow-active][data-active-stage="2"] [data-flow-stage="2"]::before{
+  transform:scaleY(1);
+}
+.hero-visual[data-flow-active][data-active-stage="0"] [data-flow-stage="0"] .event-index,
+.hero-visual[data-flow-active][data-active-stage="1"] [data-flow-stage="1"] .event-index,
+.hero-visual[data-flow-active][data-active-stage="2"] [data-flow-stage="2"] .event-index{
+  color:var(--orange);
+}
+.hero-visual[data-flow-active] .status-signal{
+  background:var(--orange);
+  transition:background-color .3s ease;
+}
+.hero-visual[data-flow-active] .status-right{
+  color:#ffba95;
+  transition:color .2s ease;
+}
+.hero-visual[data-playing="true"] .status-signal{
+  animation:signal-pulse 2.2s ease-in-out infinite;
+}
+@keyframes signal-pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(255,138,91,.28)}
+  50%{box-shadow:0 0 0 5px rgba(255,138,91,0)}
+}
+.hero-visual[data-playing="true"][data-active-stage="1"] .flow-connector:nth-of-type(3)::after,
+.hero-visual[data-playing="true"][data-active-stage="2"] .flow-connector::after{
+  content:"";
+  position:absolute;
+  left:calc(50% - 2px);
+  top:0;
+  width:4px;
+  height:8px;
+  background:var(--orange);
+  box-shadow:0 0 12px rgba(255,138,91,.6);
+  animation:flow-step .68s linear infinite;
+}
+@keyframes flow-step{to{transform:translateY(16px)}}
+.demo-console{
+  position:absolute;
+  z-index:5;
+  bottom:-1px;
+  left:50%;
+  right:auto;
+  transform:translateX(-50%);
+  width:min(100%,458px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  border:1px solid rgba(255,255,255,.13);
+  background:#161d19;
+  padding:7px 10px 7px 15px;
+  color:#c7d1c6;
+  font-size:10px;
+  box-shadow:0 8px 22px rgba(0,0,0,.2);
+}
+.demo-identifier{display:flex;align-items:center;gap:9px;font:10px/1.2 var(--mono);letter-spacing:-.02em}
+.demo-live-dot{flex:none;width:6px;height:6px;border-radius:50%;background:var(--orange)}
+.demo-actions{display:flex;align-items:center;gap:5px}
+.demo-control{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:6px 9px;
+  border:1px solid #47554c;
+  border-radius:2px;
+  background:transparent;
+  color:#e3e9e2;
+  font:10px/1.2 var(--mono);
+  white-space:nowrap;
+  transition:background-color var(--motion-fast),border-color var(--motion-fast),color var(--motion-fast);
+}
+.demo-control span{font:15px/1 var(--font)}
+.demo-control:hover{background:#303f33;border-color:#8fa48e}
+.demo-next{color:#ffb18c;border-color:rgba(255,138,91,.48)}
+.demo-next:hover{color:#fff;background:#73412d}
+.demo-control:active{background:#3e5142}
+.demo-console[data-paused="true"] .demo-live-dot{background:#6c7c6e}
+.workflow-section .phase-panel:not([hidden]){overflow:hidden}
+.phase-display[data-activated] .phase-panel:not([hidden]) .phase-graphic{
+  animation:phase-lens .52s var(--motion-ease) both;
+}
+.phase-display[data-activated] .phase-panel:not([hidden]) .phase-copy{
+  animation:phase-copy-in .45s var(--motion-ease) both;
+}
+@keyframes phase-lens{
+  from{clip-path:inset(0 0 14% 0);filter:brightness(.93)}
+  to{clip-path:inset(0);filter:brightness(1)}
+}
+@keyframes phase-copy-in{
+  from{opacity:.65;transform:translateY(12px)}
+  to{opacity:1;transform:translateY(0)}
+}
+/* Deepen a single workflow picture on interaction without moving the cards. */
+.solution-card .card-picture{transition:background-color .32s var(--motion-ease)}
+.solution-card .inbox-item{transition:background-color .25s var(--motion-ease),border-color .25s var(--motion-ease),transform .25s var(--motion-ease)}
+.solution-card:hover .picture-inbox .inbox-item.selected{transform:translateX(5px);border-color:#e88a5d;background:#fff1e5}
+.solution-card:hover .picture-automation .automation-link i{
+  animation:process-data .8s ease-in-out infinite alternate;
+}
+.solution-card:hover .picture-automation .automation-link i:nth-child(2){animation-delay:.16s}
+.solution-card:hover .picture-automation .automation-link i:nth-child(3){animation-delay:.32s}
+@keyframes process-data{from{opacity:.25}to{opacity:1}}
+.solution-card .integration-lines path{
+  stroke-dasharray:240 0;
+  transition:stroke-dasharray .7s var(--motion-ease),stroke .7s var(--motion-ease);
+}
+.solution-card:hover .integration-lines path{
+  stroke:#b85d33;
+  stroke-dasharray:7 5;
+}
+.method-steps{position:relative}
+.method-journey{position:absolute;top:0;bottom:0;left:-12px;width:2px;pointer-events:none;background:#d2d8cc}
+.method-journey i{display:block;width:100%;height:100%;background:var(--orange-dark);transform:scaleY(var(--method-progress,0));transform-origin:top;transition:transform .15s linear}
+.method-step{
+  transition:background-color .3s ease;
+}
+.method-step .step-number,.method-step h3,.method-step .step-arrow{
+  transition:color .3s var(--motion-ease),transform .3s var(--motion-ease);
+}
+.method-step[data-current-step="true"] h3,.method-step[data-current-step="true"] .step-number,.method-step[data-current-step="true"] .step-arrow{
+  color:var(--orange-dark);
+}
+.method-step[data-current-step="true"] .step-arrow{transform:translate(3px,-3px)}
+@media(prefers-reduced-motion:no-preference){
+  .vertical-art[data-entered] .vertical-title{animation:wordmark-arrival .72s var(--motion-ease) both}
+  @keyframes wordmark-arrival{
+    from{clip-path:inset(0 17% 0 0);opacity:.7;translate:-15px 0}
+    to{clip-path:inset(0);opacity:1;translate:0 0}
+  }
+  .vertical-art[data-entered] .vertical-giant{animation:giant-emerge 1s var(--motion-ease) both}
+  @keyframes giant-emerge{from{opacity:.1;transform:translateX(35px)}to{opacity:1;transform:none}}
+}
+.btn,.text-action,.header-action,.primary-nav a,.footer-links a{
+  -webkit-tap-highlight-color:transparent;
+}
+@media(max-width:1000px){
+  .demo-console{width:min(100%,460px);left:50%;right:auto;transform:translateX(-50%)}
+  .method-journey{left:-13px}
+}
+@media(max-width:700px){
+  .demo-console{
+    bottom:-18px;
+    width:100%;
+    left:0;
+    right:0;
+    transform:none;
+    padding:5px 7px 5px 9px;
+    font-size:9px;
+  }
+  .demo-identifier{font-size:9px;gap:6px}
+  .demo-control{padding:5px 7px;font-size:9px;gap:4px}
+  .visual-orbit{display:none}
+  .solution-card:hover .picture-inbox .inbox-item.selected{transform:none}
+  .method-journey{left:-8px}
+  .method-journey i{transition:none}
+  .phase-display[data-activated] .phase-panel:not([hidden]) .phase-graphic{animation-duration:.35s}
+}
+@media(max-width:350px){
+  .demo-console{bottom:-7px}
+  .demo-identifier{font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){
+  .scroll-meter>span{will-change:auto}
+  .hero-visual .workflow-window,
+  .hero-visual .status-signal,
+  .hero-visual .flow-connector::after,
+  .phase-display[data-activated] .phase-panel:not([hidden]) .phase-graphic,
+  .phase-display[data-activated] .phase-panel:not([hidden]) .phase-copy,
+  .vertical-art[data-entered] .vertical-title,
+  .vertical-art[data-entered] .vertical-giant{
+    animation:none!important;
+  }
+  .visual-orbit{transform:translate(-50%,-50%)!important}
+  .hero-visual[data-flow-active] .event-card,
+  .method-step *,.phase-display *{transition-duration:0ms!important}
+  .solution-card:hover .picture-automation .automation-link i{animation:none}
+}

@@ -22,7 +22,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/landing.css">
+  <link rel="stylesheet" href="/assets/css/motion.css">
   <script src="/assets/js/landing.js" defer></script>
+  <script src="/assets/js/motion.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -46,6 +48,7 @@
     <a href="#atuacao">Atuação</a>
     <a href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer">Falar sobre um projeto ↗</a>
   </nav>
+  <div class="scroll-meter" aria-hidden="true"><span data-scroll-meter></span></div>
 </header>
 
 <main id="conteudo">
@@ -70,14 +73,21 @@
         <div class="workflow-window">
           <div class="window-topbar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>Operação comercial</span><span class="window-top-id">N / 01</span></div>
           <div class="window-content">
-            <div class="window-status"><span class="status-signal" aria-hidden="true"></span> Fluxo conectado <span class="status-right">Modelo de processo</span></div>
-            <div class="event-card event-in"><div class="event-index">01 <span>Entrada</span></div><strong>Nova conversa recebida</strong><p>WhatsApp · Instagram · Formulário</p></div>
+            <div class="window-status"><span class="status-signal" aria-hidden="true"></span> Fluxo conectado <span class="status-right" data-demo-status>Modelo de processo</span></div>
+            <div class="event-card event-in" data-flow-stage="0"><div class="event-index">01 <span>Entrada</span></div><strong>Nova conversa recebida</strong><p>WhatsApp · Instagram · Formulário</p></div>
             <div class="flow-connector" aria-hidden="true"><span></span></div>
-            <div class="event-card event-active"><div class="event-index">02 <span>Inteligência + regras</span></div><strong>Contexto organizado</strong><p>Classificação, roteamento e próxima ação</p><b class="activity-mark" aria-hidden="true">↗</b></div>
+            <div class="event-card event-active" data-flow-stage="1"><div class="event-index">02 <span>Inteligência + regras</span></div><strong>Contexto organizado</strong><p>Classificação, roteamento e próxima ação</p><b class="activity-mark" aria-hidden="true">↗</b></div>
             <div class="flow-connector" aria-hidden="true"><span></span></div>
-            <div class="event-card event-out"><div class="event-index">03 <span>Execução</span></div><strong>Continuidade do atendimento</strong><p>Agendamento · Follow-up · CRM</p></div>
+            <div class="event-card event-out" data-flow-stage="2"><div class="event-index">03 <span>Execução</span></div><strong>Continuidade do atendimento</strong><p>Agendamento · Follow-up · CRM</p></div>
           </div>
           <div class="window-footer"><span>Não é um chatbot isolado.</span><span>É um processo conectado. <b aria-hidden="true">↗</b></span></div>
+        </div>
+        <div class="demo-console" data-demo-controls hidden>
+          <span class="demo-identifier"><span class="demo-live-dot" aria-hidden="true"></span> Demonstração de processo</span>
+          <div class="demo-actions">
+            <button type="button" class="demo-control" data-demo-toggle aria-label="Pausar demonstração">Pausar <span aria-hidden="true">Ⅱ</span></button>
+            <button type="button" class="demo-control demo-next" data-demo-next aria-label="Avançar demonstração">Avançar <span aria-hidden="true">→</span></button>
+          </div>
         </div>
         <span class="visual-coordinate coordinate-left" aria-hidden="true">NITRO / SYSTEMS</span>
         <span class="visual-coordinate coordinate-right" aria-hidden="true">BRASIL — B2B</span>
@@ -173,7 +183,8 @@
     <div class="wrap">
       <div class="eyebrow">03 — Método de trabalho</div>
       <div class="method-heading"><h2 id="metodo-title">Diagnóstico primeiro. <em>Tecnologia depois.</em></h2><p>Assumimos o ciclo completo: entender o problema, implementar com critério, acompanhar o resultado e melhorar o que foi construído.</p></div>
-      <div class="method-steps">
+      <div class="method-steps" data-method-steps>
+        <span class="method-journey" aria-hidden="true"><i></i></span>
         <article class="method-step"><span class="step-number">01</span><div><h3>Entender</h3><p>Mapear o processo atual, seus gargalos e o impacto operacional.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
         <article class="method-step"><span class="step-number">02</span><div><h3>Desenhar</h3><p>Definir a solução, as integrações e os pontos de decisão.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
         <article class="method-step"><span class="step-number">03</span><div><h3>Implementar</h3><p>Conectar a automação ao ambiente real de trabalho da empresa.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
@@ -186,7 +197,7 @@
   <section class="vertical-section section-dark section" id="atuacao" aria-labelledby="atuacao-title">
     <div class="wrap vertical-grid">
       <div class="vertical-copy"><div class="eyebrow eyebrow-light">04 — Aplicações B2B</div><h2 id="atuacao-title">Um processo específico. <span>Uma melhoria mensurável.</span></h2><p>Não partimos de uma ferramenta ou de um setor da moda. Investigamos workflows recorrentes em que atrasos, retrabalho e falta de continuidade geram custos.</p><p>A atuação é definida pelo diagnóstico: um problema operacional claro, uma solução integrada e indicadores para acompanhar seu desempenho.</p><a class="text-action" href="#contato">Conversar sobre sua operação <span aria-hidden="true">↗</span></a></div>
-      <div class="vertical-art" aria-label="Mapa de aplicações em processos comerciais B2B"><span class="vertical-giant" aria-hidden="true">N</span><div class="vertical-art-head"><span>Operações comerciais</span><span>Brasil / B2B</span></div><div class="vertical-title">Operação<br>conectada<span>.</span></div><div class="vertical-art-bottom"><span>Atendimento</span><span>Qualificação</span><span>Integração</span><span>Medição</span></div></div>
+      <div class="vertical-art" data-brand-moment aria-label="Mapa de aplicações em processos comerciais B2B"><span class="vertical-giant" aria-hidden="true">N</span><div class="vertical-art-head"><span>Operações comerciais</span><span>Brasil / B2B</span></div><div class="vertical-title">Operação<br>conectada<span>.</span></div><div class="vertical-art-bottom"><span>Atendimento</span><span>Qualificação</span><span>Integração</span><span>Medição</span></div></div>
     </div>
   </section>
 
