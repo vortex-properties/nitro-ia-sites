@@ -23,8 +23,10 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/landing.css">
   <link rel="stylesheet" href="/assets/css/motion.css">
+  <link rel="stylesheet" href="/assets/css/story.css">
   <script src="/assets/js/landing.js" defer></script>
   <script src="/assets/js/motion.js" defer></script>
+  <script src="/assets/js/story.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -146,36 +148,138 @@
     </div>
   </section>
 
-  <section class="workflow-section section-dark section" id="fluxo" aria-labelledby="fluxo-title">
+  <section class="story-section section-dark" id="fluxo" aria-labelledby="fluxo-title" data-story>
     <span class="anchor-alias" id="aplicacoes" aria-hidden="true"></span>
-    <div class="wrap workflow-layout">
-      <div class="workflow-intro">
-        <div class="eyebrow eyebrow-light">02 — Nossa abordagem</div>
-        <h2 id="fluxo-title">Da mensagem à ação. <span>Sem perder contexto no caminho.</span></h2>
-        <p>Uma automação útil não é uma sequência de respostas. É um fluxo em que cada etapa sabe o que aconteceu antes — e o que deve acontecer depois.</p>
-        <div class="phase-tabs" role="tablist" aria-label="Etapas do workflow">
-          <button type="button" role="tab" id="tab-entrada" aria-controls="panel-entrada" aria-selected="true" tabindex="0" data-phase="entrada"><span>01</span> Entrada</button>
-          <button type="button" role="tab" id="tab-decisao" aria-controls="panel-decisao" aria-selected="false" tabindex="-1" data-phase="decisao"><span>02</span> Decisão</button>
-          <button type="button" role="tab" id="tab-acao" aria-controls="panel-acao" aria-selected="false" tabindex="-1" data-phase="acao"><span>03</span> Ação</button>
-        </div>
-      </div>
-      <div class="phase-display">
-        <div class="phase-display-top"><span>Arquitetura do workflow</span><span>NITRO / 002</span></div>
-        <div class="phase-panel" role="tabpanel" id="panel-entrada" aria-labelledby="tab-entrada" data-panel="entrada">
-          <div class="phase-graphic"><span class="phase-symbol">↙</span><span class="phase-ledger">ENTRADA RECEBIDA <b>01 / 03</b></span></div>
-          <div class="phase-copy"><span class="phase-tag">Capturar</span><h3>O contato vira informação organizada.</h3><p>Canais de entrada alimentam um fluxo com histórico, identificação e regras de encaminhamento.</p></div>
-        </div>
-        <div class="phase-panel" role="tabpanel" id="panel-decisao" aria-labelledby="tab-decisao" data-panel="decisao" hidden>
-          <div class="phase-graphic"><span class="phase-symbol">⌘</span><span class="phase-ledger">CONTEXTO PROCESSADO <b>02 / 03</b></span></div>
-          <div class="phase-copy"><span class="phase-tag">Interpretar</span><h3>A próxima etapa passa a ter critério.</h3><p>Agentes e regras ajudam a qualificar, classificar e direcionar cada caso de acordo com o processo.</p></div>
-        </div>
-        <div class="phase-panel" role="tabpanel" id="panel-acao" aria-labelledby="tab-acao" data-panel="acao" hidden>
-          <div class="phase-graphic"><span class="phase-symbol">↗</span><span class="phase-ledger">AÇÃO EXECUTADA <b>03 / 03</b></span></div>
-          <div class="phase-copy"><span class="phase-tag">Executar</span><h3>A operação continua em vez de recomeçar.</h3><p>Agendamento, acompanhamento e atualização de sistemas acontecem dentro de um fluxo definido.</p></div>
-        </div>
-        <div class="phase-display-bottom"><span>Entrada</span><span class="phase-track" aria-hidden="true"><i></i></span><span>Execução</span></div>
+    <div class="wrap story-intro">
+      <div class="story-label"><span class="story-small-square" aria-hidden="true"></span> A OPERAÇÃO, VISTA POR DENTRO <span class="story-label-rule" aria-hidden="true"></span> 02 / NOSSA ABORDAGEM</div>
+      <h2 id="fluxo-title">Uma mensagem entra.<br><span>Todo o sistema se move.</span></h2>
+      <div class="story-intro-lower">
+        <p>Uma oportunidade não deveria desaparecer entre ferramentas, equipes e tarefas. Explore o caminho de uma solicitação — do primeiro contato à próxima ação.</p>
+        <span class="story-scroll-hint" aria-hidden="true">Role para explorar <span>↓</span></span>
       </div>
     </div>
+    <div class="wrap story-layout" data-story-layout>
+      <div class="story-stage" data-story-stage data-story-step="0" role="group" aria-label="Demonstração conceitual interativa de cinco etapas operacionais">
+        <div class="story-stage-inner">
+          <div class="story-stage-top">
+            <span class="stage-brand"><b class="stage-mark" aria-hidden="true">N</b> NITRO / FLOW</span>
+            <span class="stage-sequence"><span class="stage-ready-dot" aria-hidden="true"></span> <span data-story-counter>01</span> / 05</span>
+          </div>
+          <div class="story-stage-surface">
+            <div class="story-scenes" aria-hidden="true">
+              <div class="story-scene scene-intake" data-scene="0">
+                <div class="story-scene-kicker">01 / CAPTURA</div>
+                <div class="story-mini-title">Tudo começa com uma conversa.</div>
+                <div class="intake-channels"><span><i></i> WhatsApp</span><span>Formulário</span><span>Instagram</span></div>
+                <div class="intake-message">
+                  <div class="intake-message-meta"><span class="message-avatar">C</span><span>Nova solicitação</span><span class="message-pending">Recebida</span></div>
+                  <div class="intake-message-body">“Gostaria de conhecer as opções disponíveis.”</div>
+                  <div class="intake-message-bottom"><span>Mensagem recebida</span><span>Identificar contexto <b>↗</b></span></div>
+                </div>
+                <div class="scene-bottom-text">ENTRADA IDENTIFICADA <span>01 → 02</span></div>
+              </div>
+              <div class="story-scene scene-context" data-scene="1">
+                <div class="story-scene-kicker">02 / CONTEXTO</div>
+                <div class="story-mini-title">A conversa vira informação.</div>
+                <div class="context-layout">
+                  <div class="context-source"><span class="context-eyebrow">MENSAGEM ORIGINAL</span><p>“Gostaria de conhecer as opções disponíveis.”</p><span class="source-line"></span><small>Entrada não estruturada</small></div>
+                  <div class="context-bridge" aria-hidden="true"><span>→</span></div>
+                  <div class="context-fields">
+                    <div class="context-field"><span>Canal</span><strong>WhatsApp</strong><i></i></div>
+                    <div class="context-field"><span>Assunto</span><strong>Informações comerciais</strong><i></i></div>
+                    <div class="context-field"><span>Próxima etapa</span><strong>Qualificação</strong><i></i></div>
+                  </div>
+                </div>
+                <div class="scene-bottom-text">CONTEXTO ESTRUTURADO <span>02 → 03</span></div>
+              </div>
+              <div class="story-scene scene-decision" data-scene="2">
+                <div class="story-scene-kicker">03 / DECISÃO</div>
+                <div class="story-mini-title">A próxima ação ganha critério.</div>
+                <div class="decision-flow">
+                  <div class="decision-input"><span>ENTRADA</span><strong>Contato qualificado</strong></div>
+                  <span class="decision-stem" aria-hidden="true"></span>
+                  <div class="decision-rule"><span>REGRAS DO WORKFLOW</span><strong>Definir encaminhamento</strong><b aria-hidden="true">↗</b></div>
+                  <div class="decision-branches" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="decision-outputs"><div><small>ROTA A</small><strong>Informações</strong></div><div class="decision-selected"><small>ROTA B / SELECIONADA</small><strong>Comercial</strong></div><div><small>ROTA C</small><strong>Suporte</strong></div></div>
+                </div>
+                <div class="scene-bottom-text">REGRAS + CONTEXTO <span>03 → 04</span></div>
+              </div>
+              <div class="story-scene scene-action" data-scene="3">
+                <div class="story-scene-kicker">04 / EXECUÇÃO</div>
+                <div class="story-mini-title">A informação encontra seu destino.</div>
+                <div class="action-workspace">
+                  <div class="action-workspace-head"><span>Plano de ação</span><span class="action-ready">Fluxo preparado</span></div>
+                  <div class="action-row"><span class="action-check">✓</span><div><strong>Contato registrado</strong><small>Histórico disponível</small></div><span class="action-index">01</span></div>
+                  <div class="action-row"><span class="action-check">✓</span><div><strong>Encaminhamento definido</strong><small>Responsável sinalizado</small></div><span class="action-index">02</span></div>
+                  <div class="action-row action-current"><span class="action-check">→</span><div><strong>Próximo contato planejado</strong><small>Continuidade do atendimento</small></div><span class="action-index">03</span></div>
+                </div>
+                <div class="scene-bottom-text">AÇÃO CONECTADA <span>04 → 05</span></div>
+              </div>
+              <div class="story-scene scene-continuity" data-scene="4">
+                <div class="story-scene-kicker">05 / CONTINUIDADE</div>
+                <div class="story-mini-title">Nada precisa recomeçar do zero.</div>
+                <div class="continuity-board">
+                  <div class="continuity-summary"><span>HISTÓRICO CONECTADO</span><strong>Uma única linha de contexto.</strong></div>
+                  <div class="continuity-path">
+                    <div><span class="cont-number">01</span><strong>Contato</strong></div><i></i>
+                    <div><span class="cont-number">02</span><strong>Contexto</strong></div><i></i>
+                    <div><span class="cont-number">03</span><strong>Regra</strong></div><i></i>
+                    <div><span class="cont-number">04</span><strong>Ação</strong></div><i></i>
+                    <div class="cont-last"><span class="cont-number">05</span><strong>Próximo passo</strong></div>
+                  </div>
+                  <div class="continuity-footer"><span class="continuity-icon">✓</span> Processo completo, contexto preservado</div>
+                </div>
+                <div class="scene-bottom-text">OPERAÇÃO DE PONTA A PONTA <span>05 / 05</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="story-stage-footer">
+            <span class="story-demo-note">EXEMPLO CONCEITUAL · NÃO REPRESENTA UM SISTEMA EM PRODUÇÃO</span>
+            <div class="story-jumps" role="group" aria-label="Escolher capítulo da demonstração">
+              <a href="#capitulo-entrada" data-story-jump="0" aria-current="step" aria-label="Ir para o capítulo 1: Entrada">01</a>
+              <a href="#capitulo-contexto" data-story-jump="1" aria-label="Ir para o capítulo 2: Contexto">02</a>
+              <a href="#capitulo-decisao" data-story-jump="2" aria-label="Ir para o capítulo 3: Decisão">03</a>
+              <a href="#capitulo-execucao" data-story-jump="3" aria-label="Ir para o capítulo 4: Ação">04</a>
+              <a href="#capitulo-continuidade" data-story-jump="4" aria-label="Ir para o capítulo 5: Continuidade">05</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="story-rail" data-story-rail>
+        <span class="story-rail-line" aria-hidden="true"><i data-story-line></i></span>
+        <article class="story-chapter" data-story-chapter="0" id="capitulo-entrada">
+          <span class="chapter-index"><span class="chapter-num">01</span> / RECEBER</span>
+          <h3>Uma nova conversa.<br><em>Uma oportunidade.</em></h3>
+          <p>Uma mensagem chega por um dos canais da empresa. Em vez de se perder numa caixa de entrada, passa a fazer parte do fluxo operacional.</p>
+          <span class="chapter-outcome">ENTRADA RECONHECIDA <b aria-hidden="true">↗</b></span>
+        </article>
+        <article class="story-chapter" data-story-chapter="1" id="capitulo-contexto">
+          <span class="chapter-index"><span class="chapter-num">02</span> / ENTENDER</span>
+          <h3>Dados soltos viram<br><em>contexto utilizável.</em></h3>
+          <p>O sistema pode organizar canal, assunto, histórico e intenção. O próximo responsável recebe informação estruturada — não uma conversa para decifrar do zero.</p>
+          <span class="chapter-outcome">CONTEXTO ORGANIZADO <b aria-hidden="true">↗</b></span>
+        </article>
+        <article class="story-chapter" data-story-chapter="2" id="capitulo-decisao">
+          <span class="chapter-index"><span class="chapter-num">03</span> / DECIDIR</span>
+          <h3>O próximo passo<br><em>tem uma lógica.</em></h3>
+          <p>Regras e inteligência ajudam a encaminhar cada caso. O trabalho segue critérios definidos pela operação, com espaço para supervisão humana.</p>
+          <span class="chapter-outcome">DECISÃO DIRECIONADA <b aria-hidden="true">↗</b></span>
+        </article>
+        <article class="story-chapter" data-story-chapter="3" id="capitulo-execucao">
+          <span class="chapter-index"><span class="chapter-num">04</span> / EXECUTAR</span>
+          <h3>A decisão vira<br><em>uma ação concreta.</em></h3>
+          <p>Uma atualização no CRM, um responsável notificado, um acompanhamento preparado. Sistemas e equipes passam a compartilhar a mesma linha de trabalho.</p>
+          <span class="chapter-outcome">EXECUÇÃO ENCAMINHADA <b aria-hidden="true">↗</b></span>
+        </article>
+        <article class="story-chapter" data-story-chapter="4" id="capitulo-continuidade">
+          <span class="chapter-index"><span class="chapter-num">05</span> / EVOLUIR</span>
+          <h3>O histórico permanece.<br><em>A operação avança.</em></h3>
+          <p>Cada interação deixa contexto para a próxima. Essa continuidade torna possível acompanhar o processo, encontrar gargalos e melhorar a operação com dados reais.</p>
+          <span class="chapter-outcome">CONTINUIDADE ESTABELECIDA <b aria-hidden="true">✓</b></span>
+        </article>
+      </div>
+    </div>
+    <div class="wrap story-end"><span>O objetivo não é automatizar por automatizar.</span><strong>É fazer o trabalho fluir.</strong><a href="#metodo">Entenda como implementamos <span aria-hidden="true">↘</span></a></div>
   </section>
 
   <section class="method-section section-light section" id="metodo" aria-labelledby="metodo-title">
