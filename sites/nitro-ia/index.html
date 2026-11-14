@@ -1,17 +1,15 @@
 <!doctype html>
-<html lang="pt-BR" data-type="service" data-motion="quiet" data-radius="soft">
+<html lang="pt-BR" data-command-center>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#0b0d0c">
+  <meta name="theme-color" content="#0b0e0c">
   <meta name="color-scheme" content="dark light">
-  <meta name="page-type" content="service">
-  <meta name="site-kind" content="other">
-  <title>Nitro IA — Inteligência aplicada à sua operação</title>
-  <meta name="description" content="A Nitro IA implementa agentes de inteligência artificial, automações e integrações em workflows comerciais e operacionais. Diagnóstico, execução e melhoria contínua.">
+  <title>Nitro IA — Inteligência no centro da operação</title>
+  <meta name="description" content="A Nitro IA desenha e implementa agentes, integrações e automações para conectar workflows empresariais. Conheça nossa abordagem operacional.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Nitro IA — Inteligência aplicada à sua operação">
-  <meta property="og:description" content="IA, automação e integrações para transformar workflows que custam tempo e oportunidades à sua empresa.">
+  <meta property="og:title" content="Nitro IA — Inteligência no centro da operação">
+  <meta property="og:description" content="Integrações, agentes e automações. Um fluxo de ponta a ponta, um contexto compartilhado.">
   <meta property="og:image" content="https://nitro-ia.vercel.app/assets/images/og-nitro.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -21,201 +19,162 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/landing.css">
-  <link rel="stylesheet" href="/assets/css/motion.css">
+  <link rel="stylesheet" href="/assets/css/command.css">
   <script src="/assets/js/landing.js" defer></script>
-  <script src="/assets/js/motion.js" defer></script>
+  <script src="/assets/js/command.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <header class="site-header" id="inicio">
   <div class="wrap header-inner">
-    <a class="brand" href="#inicio" aria-label="Nitro IA — voltar ao início">
-      <span class="brand-mark" aria-hidden="true">N</span><span class="brand-word">NITRO<span>IA</span></span>
-    </a>
-    <nav class="primary-nav" aria-label="Navegação principal">
-      <a href="#solucoes">O que fazemos</a>
-      <a href="#fluxo">Nossa abordagem</a>
-      <a href="#metodo">Método</a>
-    </nav>
+    <a class="brand" href="#inicio" aria-label="Nitro IA — Início"><span class="brand-mark" aria-hidden="true">N</span><span class="brand-name">NITRO<span>IA</span></span></a>
+    <nav class="primary-nav" aria-label="Menu principal"><a href="#solucoes">Soluções</a><a href="#comando">Central de comando</a><a href="#metodo">Método</a></nav>
     <a class="header-action" href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer">Falar sobre um projeto <span aria-hidden="true">↗</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu" data-menu-toggle><span></span><span></span></button>
+    <button class="menu-toggle" data-menu-toggle type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"><span></span><span></span></button>
   </div>
-  <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação móvel" hidden>
-    <a href="#solucoes">O que fazemos</a>
-    <a href="#fluxo">Nossa abordagem</a>
-    <a href="#metodo">Método</a>
-    <a href="#atuacao">Atuação</a>
-    <a href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer">Falar sobre um projeto ↗</a>
-  </nav>
-  <div class="scroll-meter" aria-hidden="true"><span data-scroll-meter></span></div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu móvel" hidden><a href="#solucoes">Soluções</a><a href="#comando">Central de comando</a><a href="#metodo">Método</a><a href="#contato">Contato</a><a href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer">Falar sobre um projeto ↗</a></nav>
 </header>
-
 <main id="conteudo">
-  <section class="hero section-dark" aria-labelledby="hero-title">
-    <div class="hero-field" aria-hidden="true"></div>
-    <div class="wrap hero-layout">
-      <div class="hero-copy">
-        <div class="eyebrow eyebrow-light"><span class="eyebrow-mark" aria-hidden="true"></span> Inteligência operacional para empresas</div>
-        <h1 id="hero-title">IA para a sua operação <span>avançar.</span></h1>
-        <p class="hero-lede">Projetamos agentes, automações e integrações para eliminar atritos entre atendimento, decisões e execução.</p>
-        <div class="hero-actions">
-          <a class="btn btn-orange" href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer"><span>Falar sobre um projeto</span><span class="btn-arrow" aria-hidden="true">↗</span></a>
-          <a class="text-action" href="#metodo">Conhecer o método <span aria-hidden="true">↘</span></a>
+  <section class="cc-hero" aria-labelledby="hero-title">
+    <div class="cc-hero-grid" aria-hidden="true"></div>
+    <div class="wrap cc-hero-shell">
+      <div class="cc-opening">
+        <div class="cc-kicker"><span class="cc-square"></span> OPERAÇÕES CONECTADAS <span class="cc-kicker-line"></span> NITRO / BRASIL</div>
+        <h1 id="hero-title">Inteligência no<br><em>centro de tudo.</em></h1>
+        <p>Uma empresa não precisa de mais telas desconectadas. Precisa de processos que compartilhem contexto e se movimentem juntos.</p>
+        <div class="cc-actions">
+          <a class="cc-cta" href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer"><span>Iniciar uma conversa</span><span aria-hidden="true">↗</span></a>
+          <a class="cc-link" href="#comando">Explorar o sistema <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="hero-footnote"><span class="micro-divider" aria-hidden="true"></span> Diagnóstico <span aria-hidden="true">/</span> Implementação <span aria-hidden="true">/</span> Medição</div>
+        <div class="cc-footnote"><span class="footnote-rule"></span> AGENTES <b>/</b> AUTOMAÇÕES <b>/</b> INTEGRAÇÕES</div>
       </div>
 
-      <div class="hero-visual" aria-label="Diagrama de um fluxo comercial integrando atendimento, qualificação e acompanhamento">
-        <div class="visual-orbit orbit-one" aria-hidden="true"></div>
-        <div class="visual-orbit orbit-two" aria-hidden="true"></div>
-        <div class="signal-core" aria-hidden="true"><img src="/assets/images/emblem.webp" alt=""></div>
-        <div class="workflow-window">
-          <div class="window-topbar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>Operação comercial</span><span class="window-top-id">N / 01</span></div>
-          <div class="window-content">
-            <div class="window-status"><span class="status-signal" aria-hidden="true"></span> Fluxo conectado <span class="status-right" data-demo-status>Modelo de processo</span></div>
-            <div class="event-card event-in" data-flow-stage="0"><div class="event-index">01 <span>Entrada</span></div><strong>Nova conversa recebida</strong><p>WhatsApp · Instagram · Formulário</p></div>
-            <div class="flow-connector" aria-hidden="true"><span></span></div>
-            <div class="event-card event-active" data-flow-stage="1"><div class="event-index">02 <span>Inteligência + regras</span></div><strong>Contexto organizado</strong><p>Classificação, roteamento e próxima ação</p><b class="activity-mark" aria-hidden="true">↗</b></div>
-            <div class="flow-connector" aria-hidden="true"><span></span></div>
-            <div class="event-card event-out" data-flow-stage="2"><div class="event-index">03 <span>Execução</span></div><strong>Continuidade do atendimento</strong><p>Agendamento · Follow-up · CRM</p></div>
-          </div>
-          <div class="window-footer"><span>Não é um chatbot isolado.</span><span>É um processo conectado. <b aria-hidden="true">↗</b></span></div>
+      <div class="cc-command-frame" aria-label="Diagrama conceitual de um centro operacional conectado" data-network data-state="0">
+        <div class="cc-frame-head"><span class="cc-frame-brand"><span class="frame-led"></span> NITRO / COMMAND</span><span class="frame-top-right"><span>ARQUITETURA OPERACIONAL</span><span class="frame-id">SYS—001</span></span></div>
+        <div class="cc-network">
+          <div class="cc-network-grid" aria-hidden="true"></div>
+          <svg viewBox="0 0 700 520" class="cc-lines" preserveAspectRatio="none" aria-hidden="true">
+            <path class="cc-line-base" d="M350 260 C270 230 236 165 145 132 M350 260 C428 221 469 156 555 132 M350 260 C272 300 240 366 145 397 M350 260 C430 306 466 361 555 397"/>
+            <path class="cc-line-signal signal-0" d="M145 132 C236 165 270 230 350 260"/>
+            <path class="cc-line-signal signal-1" d="M350 260 C428 221 469 156 555 132"/>
+            <path class="cc-line-signal signal-2" d="M555 132 C485 197 438 319 555 397"/>
+            <path class="cc-line-signal signal-3" d="M555 397 C440 395 304 397 145 397"/>
+          </svg>
+          <span class="cc-coordinate co-a" aria-hidden="true">NW 01 / 04</span>
+          <span class="cc-coordinate co-b" aria-hidden="true">NE 02 / 04</span>
+          <span class="cc-coordinate co-c" aria-hidden="true">SW 03 / 04</span>
+          <span class="cc-coordinate co-d" aria-hidden="true">SE 04 / 04</span>
+          <div class="cc-orbit orbit-main" aria-hidden="true"></div><div class="cc-orbit orbit-small" aria-hidden="true"></div>
+          <div class="cc-core" aria-hidden="true"><div class="cc-core-rim"><span>N<span class="core-mini">/ IA</span></span></div><div class="cc-core-caption">ORCHESTRATION CORE</div></div>
+          <button type="button" class="cc-node node-capture" data-network-node="0" aria-pressed="true"><span class="node-id">NODE / 01</span><span class="node-hero"><span class="node-ico" aria-hidden="true">↘</span> Captura</span><span class="node-detail">Canais de entrada</span></button>
+          <button type="button" class="cc-node node-intellect" data-network-node="1" aria-pressed="false"><span class="node-id">NODE / 02</span><span class="node-hero"><span class="node-ico" aria-hidden="true">✳</span> Inteligência</span><span class="node-detail">Contexto e regras</span></button>
+          <button type="button" class="cc-node node-systems" data-network-node="2" aria-pressed="false"><span class="node-id">NODE / 03</span><span class="node-hero"><span class="node-ico" aria-hidden="true">⌘</span> Integração</span><span class="node-detail">Dados e sistemas</span></button>
+          <button type="button" class="cc-node node-execute" data-network-node="3" aria-pressed="false"><span class="node-id">NODE / 04</span><span class="node-hero"><span class="node-ico" aria-hidden="true">↗</span> Execução</span><span class="node-detail">Próximas ações</span></button>
+          <div class="cc-crosshair ch-tl" aria-hidden="true"></div><div class="cc-crosshair ch-br" aria-hidden="true"></div>
         </div>
-        <div class="demo-console" data-demo-controls hidden>
-          <span class="demo-identifier"><span class="demo-live-dot" aria-hidden="true"></span> Demonstração de processo</span>
-          <div class="demo-actions">
-            <button type="button" class="demo-control" data-demo-toggle aria-label="Pausar demonstração">Pausar <span aria-hidden="true">Ⅱ</span></button>
-            <button type="button" class="demo-control demo-next" data-demo-next aria-label="Avançar demonstração">Avançar <span aria-hidden="true">→</span></button>
-          </div>
+        <div class="cc-frame-bottom">
+          <span><span class="live-signal"></span> VISUALIZAÇÃO CONCEITUAL</span>
+          <span class="cc-frame-right"><button class="cc-hero-play" data-hero-toggle type="button" aria-label="Pausar demonstração">Pausar Ⅱ</button><span class="cc-frame-current"><span data-network-step>01</span> / 04</span></span>
         </div>
-        <span class="visual-coordinate coordinate-left" aria-hidden="true">NITRO / SYSTEMS</span>
-        <span class="visual-coordinate coordinate-right" aria-hidden="true">BRASIL — B2B</span>
       </div>
     </div>
-    <div class="hero-bottomline" aria-hidden="true"><span>O próximo nível da sua operação começa no processo.</span><span>01 / 06</span></div>
+    <div class="cc-hero-bottom wrap"><span>DESENHADO PARA WORKFLOWS EMPRESARIAIS</span><span>DESLIZE PARA EXPLORAR ↓</span></div>
   </section>
 
-  <section class="solutions section-light section" id="solucoes" aria-labelledby="solucoes-title">
-    <span class="anchor-alias" id="o-que-fazemos" aria-hidden="true"></span>
+  <section class="cc-statement" id="solucoes" aria-labelledby="solutions-title">
     <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">01 — O que fazemos</div>
-        <div class="section-heading-grid">
-          <h2 id="solucoes-title">Sua empresa não precisa de mais ferramentas. <em>Precisa que elas trabalhem juntas.</em></h2>
-          <p>A Nitro identifica o que está travando a operação e constrói a infraestrutura necessária para o trabalho fluir de ponta a ponta.</p>
-        </div>
+      <div class="cc-section-label"><span>01</span> CONECTAR É TRANSFORMAR</div>
+      <div class="cc-statement-grid">
+        <h2 id="solutions-title">O problema não é a falta de tecnologia.<br><em>É a falta de continuidade.</em></h2>
+        <p>Quando cada ferramenta trabalha sozinha, a informação se perde entre mensagens, planilhas e decisões. A Nitro projeta o caminho entre esses pontos para que a operação se torne uma só.</p>
       </div>
-
-      <div class="solution-grid">
-        <article class="solution-card">
-          <div class="card-top"><span>01 / Atendimento</span><span aria-hidden="true">↗</span></div>
-          <div class="card-picture picture-inbox" aria-label="Representação de atendimento organizado com próximas ações">
-            <div class="inbox-top"><span>Entradas</span><span class="ui-indicator">● Em análise</span></div>
-            <div class="inbox-item"><span class="ui-avatar">C</span><div><strong>Primeiro contato</strong><small>Nova conversa identificada</small></div><span class="ui-time">01</span></div>
-            <div class="inbox-item selected"><span class="ui-avatar warm">Q</span><div><strong>Qualificação</strong><small>Contexto registrado</small></div><span class="ui-time">02</span></div>
-            <div class="inbox-item"><span class="ui-avatar">A</span><div><strong>Próxima ação</strong><small>Encaminhamento definido</small></div><span class="ui-time">03</span></div>
-          </div>
-          <h3>Atendimento que não perde o fio</h3>
-          <p>Conectamos o primeiro contato à qualificação, ao encaminhamento e ao acompanhamento.</p>
-        </article>
-        <article class="solution-card">
-          <div class="card-top"><span>02 / Automação</span><span aria-hidden="true">↗</span></div>
-          <div class="card-picture picture-automation" aria-label="Representação de automação entre evento e execução">
-            <div class="automation-input"><span class="mini-label">Evento</span><strong>Oportunidade sem retorno</strong></div>
-            <div class="automation-link" aria-hidden="true"><i></i><i></i><i></i></div>
-            <div class="automation-output"><span class="mini-label">Regra de operação</span><strong>Acionar acompanhamento</strong><span class="process-ready">Regra definida <b>✓</b></span></div>
-          </div>
-          <h3>Rotinas que se executam</h3>
-          <p>Automatizamos tarefas recorrentes com regras, contexto e responsabilidade operacional.</p>
-        </article>
-        <article class="solution-card">
-          <div class="card-top"><span>03 / Integração</span><span aria-hidden="true">↗</span></div>
-          <div class="card-picture picture-integrations" aria-label="Representação de integração entre canais e sistemas">
-            <div class="integration-chip chip-one">Atendimento</div>
-            <div class="integration-chip chip-two">CRM</div>
-            <div class="integration-hub"><span>NI</span></div>
-            <div class="integration-chip chip-three">Agenda</div>
-            <div class="integration-chip chip-four">Dados</div>
-            <svg class="integration-lines" viewBox="0 0 350 240" preserveAspectRatio="none" aria-hidden="true"><path d="M175 120L80 62 M175 120L270 62 M175 120L80 186 M175 120L270 186"/></svg>
-          </div>
-          <h3>Sistemas com o mesmo contexto</h3>
-          <p>Integramos dados, ferramentas e pessoas para reduzir retrabalho e decisões no escuro.</p>
-        </article>
+      <div class="cc-capabilities">
+        <article class="capability"><span class="cap-n">A / 01</span><span class="cap-icon" aria-hidden="true">↘</span><h3>Capturar</h3><p>Organizar entradas e preservar o contexto das conversas.</p></article>
+        <article class="capability"><span class="cap-n">B / 02</span><span class="cap-icon" aria-hidden="true">⌘</span><h3>Interpretar</h3><p>Aplicar regras e inteligência onde as decisões acontecem.</p></article>
+        <article class="capability"><span class="cap-n">C / 03</span><span class="cap-icon" aria-hidden="true">↗</span><h3>Executar</h3><p>Conectar equipes, sistemas e próximas ações dentro do fluxo.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="workflow-section section-dark section" id="fluxo" aria-labelledby="fluxo-title">
-    <span class="anchor-alias" id="aplicacoes" aria-hidden="true"></span>
-    <div class="wrap workflow-layout">
-      <div class="workflow-intro">
-        <div class="eyebrow eyebrow-light">02 — Nossa abordagem</div>
-        <h2 id="fluxo-title">Da mensagem à ação. <span>Sem perder contexto no caminho.</span></h2>
-        <p>Uma automação útil não é uma sequência de respostas. É um fluxo em que cada etapa sabe o que aconteceu antes — e o que deve acontecer depois.</p>
-        <div class="phase-tabs" role="tablist" aria-label="Etapas do workflow">
-          <button type="button" role="tab" id="tab-entrada" aria-controls="panel-entrada" aria-selected="true" tabindex="0" data-phase="entrada"><span>01</span> Entrada</button>
-          <button type="button" role="tab" id="tab-decisao" aria-controls="panel-decisao" aria-selected="false" tabindex="-1" data-phase="decisao"><span>02</span> Decisão</button>
-          <button type="button" role="tab" id="tab-acao" aria-controls="panel-acao" aria-selected="false" tabindex="-1" data-phase="acao"><span>03</span> Ação</button>
-        </div>
-      </div>
-      <div class="phase-display">
-        <div class="phase-display-top"><span>Arquitetura do workflow</span><span>NITRO / 002</span></div>
-        <div class="phase-panel" role="tabpanel" id="panel-entrada" aria-labelledby="tab-entrada" data-panel="entrada">
-          <div class="phase-graphic"><span class="phase-symbol">↙</span><span class="phase-ledger">ENTRADA RECEBIDA <b>01 / 03</b></span></div>
-          <div class="phase-copy"><span class="phase-tag">Capturar</span><h3>O contato vira informação organizada.</h3><p>Canais de entrada alimentam um fluxo com histórico, identificação e regras de encaminhamento.</p></div>
-        </div>
-        <div class="phase-panel" role="tabpanel" id="panel-decisao" aria-labelledby="tab-decisao" data-panel="decisao" hidden>
-          <div class="phase-graphic"><span class="phase-symbol">⌘</span><span class="phase-ledger">CONTEXTO PROCESSADO <b>02 / 03</b></span></div>
-          <div class="phase-copy"><span class="phase-tag">Interpretar</span><h3>A próxima etapa passa a ter critério.</h3><p>Agentes e regras ajudam a qualificar, classificar e direcionar cada caso de acordo com o processo.</p></div>
-        </div>
-        <div class="phase-panel" role="tabpanel" id="panel-acao" aria-labelledby="tab-acao" data-panel="acao" hidden>
-          <div class="phase-graphic"><span class="phase-symbol">↗</span><span class="phase-ledger">AÇÃO EXECUTADA <b>03 / 03</b></span></div>
-          <div class="phase-copy"><span class="phase-tag">Executar</span><h3>A operação continua em vez de recomeçar.</h3><p>Agendamento, acompanhamento e atualização de sistemas acontecem dentro de um fluxo definido.</p></div>
-        </div>
-        <div class="phase-display-bottom"><span>Entrada</span><span class="phase-track" aria-hidden="true"><i></i></span><span>Execução</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="method-section section-light section" id="metodo" aria-labelledby="metodo-title">
-    <span class="anchor-alias" id="como-funciona" aria-hidden="true"></span>
+  <section class="cc-operator" id="comando" aria-labelledby="command-title">
     <div class="wrap">
-      <div class="eyebrow">03 — Método de trabalho</div>
-      <div class="method-heading"><h2 id="metodo-title">Diagnóstico primeiro. <em>Tecnologia depois.</em></h2><p>Assumimos o ciclo completo: entender o problema, implementar com critério, acompanhar o resultado e melhorar o que foi construído.</p></div>
-      <div class="method-steps" data-method-steps>
-        <span class="method-journey" aria-hidden="true"><i></i></span>
-        <article class="method-step"><span class="step-number">01</span><div><h3>Entender</h3><p>Mapear o processo atual, seus gargalos e o impacto operacional.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
-        <article class="method-step"><span class="step-number">02</span><div><h3>Desenhar</h3><p>Definir a solução, as integrações e os pontos de decisão.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
-        <article class="method-step"><span class="step-number">03</span><div><h3>Implementar</h3><p>Conectar a automação ao ambiente real de trabalho da empresa.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
-        <article class="method-step"><span class="step-number">04</span><div><h3>Medir</h3><p>Observar indicadores e comparar o comportamento do processo.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
-        <article class="method-step"><span class="step-number">05</span><div><h3>Evoluir</h3><p>Ajustar o sistema e expandir quando os resultados justificarem.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
+      <div class="cc-section-label label-muted"><span>02</span> INTERAJA COM A ARQUITETURA</div>
+      <div class="cc-operator-heading">
+        <h2 id="command-title">Assuma o <em>comando.</em></h2>
+        <p>Selecione um módulo e veja como cada parte contribui para o mesmo processo. Um modelo de funcionamento, não dados reais de uma operação.</p>
+      </div>
+
+      <div class="cc-system" data-command-system data-state="0">
+        <div class="cc-system-top"><span><span class="system-top-square">N</span> NITRO / OPERATIONS ARCHITECTURE</span><span class="system-top-actions"><span><span class="orange-dot"></span> MODO DEMONSTRAÇÃO</span><button type="button" data-command-expand aria-label="Expandir central de comando em tela cheia">Expandir central ⤢</button></span></div>
+        <div class="cc-system-layout">
+          <nav class="cc-system-sidebar" aria-label="Módulos da arquitetura">
+            <span class="system-sidebar-head">MÓDULOS / 04</span>
+            <button type="button" data-command-tab="0" aria-pressed="true"><span class="sys-tab-number">01</span><span>Captura</span><span aria-hidden="true">↗</span></button>
+            <button type="button" data-command-tab="1" aria-pressed="false"><span class="sys-tab-number">02</span><span>Inteligência</span><span aria-hidden="true">↗</span></button>
+            <button type="button" data-command-tab="2" aria-pressed="false"><span class="sys-tab-number">03</span><span>Integração</span><span aria-hidden="true">↗</span></button>
+            <button type="button" data-command-tab="3" aria-pressed="false"><span class="sys-tab-number">04</span><span>Execução</span><span aria-hidden="true">↗</span></button>
+            <div class="cc-system-side-foot"><span class="side-scan" aria-hidden="true"></span><span>WORKFLOW / CONECTADO</span></div>
+          </nav>
+          <div class="cc-system-main">
+            <div class="sys-topline"><span>VISÃO DO MÓDULO</span><span>CAMADA <b data-sys-number>01</b> / 04</span></div>
+            <div class="sys-content" aria-live="polite" aria-atomic="true">
+              <div class="sys-title"><span data-sys-tag>01 / ENTRADA</span><h3 data-sys-title>Tudo começa com um sinal.</h3><p data-sys-description>Uma conversa chega. O contexto é identificado e uma oportunidade pode entrar em um fluxo estruturado.</p></div>
+              <div class="sys-visual" aria-hidden="true">
+                <div class="sys-orbit orbit-outer"></div><div class="sys-orbit orbit-inner"></div>
+                <svg class="sys-pipeline" viewBox="0 0 600 240" preserveAspectRatio="xMidYMid meet">
+                  <path class="sys-pipe-bg" d="M74 119 H525"/>
+                  <path class="sys-pipe-trace" d="M74 119 H525" pathLength="100"/>
+                </svg>
+                <div class="sys-chip sys-chip-a"><small>01 / RECEBER</small><span>CONTATO</span></div>
+                <div class="sys-chip sys-chip-b"><small>02 / ORGANIZAR</small><span>CONTEXTO</span></div>
+                <div class="sys-chip sys-chip-c"><small>03 / CONECTAR</small><span>SISTEMAS</span></div>
+                <div class="sys-chip sys-chip-d"><small>04 / AVANÇAR</small><span>EXECUÇÃO</span></div>
+              </div>
+              <div class="sys-insight"><span class="sys-insight-label">RESULTADO ESPERADO</span><strong data-sys-outcome>Informação capturada com continuidade.</strong><span class="sys-insight-arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </div>
+          <aside class="cc-system-telemetry">
+            <div class="telemetry-top"><span>FLUXO / SIMULADO</span><span>●</span></div>
+            <div class="telemetry-display"><span>ESTADO ATUAL</span><strong data-telemetry-state>RECEBENDO</strong></div>
+            <div class="telemetry-protocol"><span>PROCESSO CONECTADO</span><div class="telemetry-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="telemetry-trace"><span>ETAPAS DO MODELO</span><ul><li data-trace="0"><b>01</b><span>Entrada reconhecida</span></li><li data-trace="1"><b>02</b><span>Contexto organizado</span></li><li data-trace="2"><b>03</b><span>Sistemas conectados</span></li><li data-trace="3"><b>04</b><span>Próxima ação definida</span></li></ul></div>
+            <div class="telemetry-bottom">NÃO REPRESENTA UM CLIENTE OU SISTEMA EM PRODUÇÃO</div>
+          </aside>
+        </div>
+        <div class="cc-system-controls">
+          <span>SEQUÊNCIA / <b data-system-progress>01 / 04</b></span>
+          <div class="cc-control-buttons"><button type="button" data-play-toggle aria-pressed="false">Pausar <span aria-hidden="true">Ⅱ</span></button><button type="button" data-next-step>Próximo módulo <span aria-hidden="true">→</span></button></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="vertical-section section-dark section" id="atuacao" aria-labelledby="atuacao-title">
-    <div class="wrap vertical-grid">
-      <div class="vertical-copy"><div class="eyebrow eyebrow-light">04 — Aplicações B2B</div><h2 id="atuacao-title">Um processo específico. <span>Uma melhoria mensurável.</span></h2><p>Não partimos de uma ferramenta ou de um setor da moda. Investigamos workflows recorrentes em que atrasos, retrabalho e falta de continuidade geram custos.</p><p>A atuação é definida pelo diagnóstico: um problema operacional claro, uma solução integrada e indicadores para acompanhar seu desempenho.</p><a class="text-action" href="#contato">Conversar sobre sua operação <span aria-hidden="true">↗</span></a></div>
-      <div class="vertical-art" data-brand-moment aria-label="Mapa de aplicações em processos comerciais B2B"><span class="vertical-giant" aria-hidden="true">N</span><div class="vertical-art-head"><span>Operações comerciais</span><span>Brasil / B2B</span></div><div class="vertical-title">Operação<br>conectada<span>.</span></div><div class="vertical-art-bottom"><span>Atendimento</span><span>Qualificação</span><span>Integração</span><span>Medição</span></div></div>
+  <section class="cc-method" id="metodo" aria-labelledby="method-title">
+    <div class="wrap">
+      <div class="cc-section-label label-method"><span>03</span> DA ESTRATÉGIA À EXECUÇÃO</div>
+      <div class="cc-method-top"><h2 id="method-title">Tecnologia é o meio.<br><em>Resultado operacional é o fim.</em></h2><p>Nosso trabalho começa no processo, não na ferramenta. A implementação só tem valor se resolver uma fricção específica e puder ser acompanhada.</p></div>
+      <div class="cc-method-rows">
+        <div class="cc-method-row"><span>01 / EXPLORAR</span><h3>Diagnóstico</h3><p>Entender gargalos e definir o problema que vale resolver.</p><b aria-hidden="true">↗</b></div>
+        <div class="cc-method-row"><span>02 / DESENHAR</span><h3>Arquitetura</h3><p>Planejar sistemas, regras, responsabilidades e integrações.</p><b aria-hidden="true">↗</b></div>
+        <div class="cc-method-row"><span>03 / CONSTRUIR</span><h3>Implementação</h3><p>Levar o fluxo ao ambiente operacional da empresa.</p><b aria-hidden="true">↗</b></div>
+        <div class="cc-method-row"><span>04 / ACOMPANHAR</span><h3>Medição</h3><p>Observar o comportamento real do processo e ajustar.</p><b aria-hidden="true">↗</b></div>
+      </div>
     </div>
   </section>
 
-  <section class="closing-section section-light" id="contato" aria-labelledby="contato-title">
-    <div class="wrap closing-content">
-      <div class="eyebrow">05 — Próximo passo</div>
-      <h2 id="contato-title">Vamos encontrar o ponto onde sua operação <em>pode melhorar.</em></h2>
-      <div class="closing-bottom"><p>Conte como seu processo funciona hoje. Avaliamos onde IA e automação fazem sentido antes de propor qualquer implementação.</p><a class="btn btn-dark" href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer"><span>Falar sobre um projeto</span><span class="btn-arrow" aria-hidden="true">↗</span></a></div>
-      <div class="closing-meta"><span>Projetos B2B sob diagnóstico e proposta personalizada.</span><span>Brasil / Remoto</span></div>
+  <section class="cc-finale" id="contato" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="cc-finale-top"><span class="cc-final-mark">N /</span><span>OPERACIONAL. INTEGRADO. INTELIGENTE.</span></div>
+      <h2 id="contact-title">Menos atrito.<br>Mais <em>operação.</em></h2>
+      <div class="cc-finale-bottom"><p>Descubra onde automação, agentes e integrações podem fazer diferença no seu fluxo empresarial. Primeiro, entendemos o problema.</p><a class="cc-cta cc-cta-dark" href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer"><span>Falar sobre um projeto</span><span aria-hidden="true">↗</span></a></div>
     </div>
   </section>
 </main>
-
-<footer class="site-footer">
+<footer class="cc-footer">
   <div class="wrap">
-    <div class="footer-main"><div class="footer-brand"><div class="footer-lockup"><span class="brand-mark" aria-hidden="true">N</span><span class="brand-word">NITRO<span>IA</span></span></div><p>Inteligência aplicada a workflows que importam.</p></div><div class="footer-links"><div><span>Explore</span><a href="#solucoes">Soluções</a><a href="#fluxo">Abordagem</a><a href="#metodo">Método</a><a href="#atuacao">Atuação</a></div><div><span>Contato</span><a href="mailto:lfabricio2445@gmail.com">E-mail</a><a href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div><div><span>Informações</span><a href="/termos/">Termos de Serviço</a><a href="/privacidade/">Privacidade</a><a href="/cancelamento-e-reembolso/">Cancelamento e Reembolso</a></div></div></div>
-    <p class="footer-disclosure">Os serviços B2B de diagnóstico, desenvolvimento, implementação e manutenção são realizados conforme escopo, valores, prazos e responsabilidades definidos em proposta comercial e/ou contrato.</p>
-    <div class="footer-bottom"><span>© 2026 Nitro IA. Todos os direitos reservados.</span><a href="#inicio">Voltar ao topo ↑</a></div>
+    <div class="cc-footer-grid"><div><a class="brand" href="#inicio" aria-label="Nitro IA — Início"><span class="brand-mark" aria-hidden="true">N</span><span class="brand-name">NITRO<span>IA</span></span></a><p>Inteligência aplicada aos workflows que importam.</p></div><nav aria-label="Navegação de rodapé"><span>EXPLORAR</span><a href="#solucoes">Soluções</a><a href="#comando">Central de comando</a><a href="#metodo">Método</a></nav><nav aria-label="Contato"><span>CONTATO</span><a href="mailto:lfabricio2445@gmail.com">E-mail ↗</a><a href="https://wa.me/5588988567126?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20IA%2Fautoma%C3%A7%C3%A3o%20com%20a%20Nitro." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></nav><nav aria-label="Documentos legais"><span>INFORMAÇÕES</span><a href="/termos/">Termos de Serviço</a><a href="/privacidade/">Privacidade</a><a href="/cancelamento-e-reembolso/">Cancelamento e Reembolso</a></nav></div>
+    <p class="cc-legal-disclaimer">Serviços de diagnóstico, desenvolvimento, implementação e manutenção definidos conforme escopo, valores, prazos e responsabilidades formalizados em proposta comercial e/ou contrato.</p>
+    <div class="cc-footer-end"><span>© 2026 Nitro IA. Todos os direitos reservados.</span><a href="#inicio">Voltar ao início ↑</a></div>
   </div>
 </footer>
 </body>
